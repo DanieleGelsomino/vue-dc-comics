@@ -165,7 +165,7 @@ name:'FooterComponent'
      list-style-type: $list-style;
      display: $d-flex;
      flex-direction: $f-direction-column;
-     align-items:start;
+     align-items:flex-start;
      width: 30%;
 
      li {

@@ -49,10 +49,10 @@ name:'HeaderComponent'
       a {
         text-decoration:$no-decoration;
         color:$text-darkgray;
-        padding-bottom: 29px;
+        padding-bottom: 30px;
         &:hover {
           color: $text-azure;
-          border-bottom: 4px solid $text-azure;
+          border-bottom: 5px solid $text-azure;
         }
       }
     }
