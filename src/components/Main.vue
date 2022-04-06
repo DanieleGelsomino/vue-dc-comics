@@ -19,7 +19,7 @@ name:'MainComponent'
   display: $d-flex;
   justify-content: space-between;
   align-items:center;
-  width: 80%;
+  width: $w-80;
   h3 {
     color: $text-white;
   }

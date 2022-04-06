@@ -33,7 +33,7 @@ name:'HeaderComponent'
   display: $d-flex;
   justify-content: space-between;
   align-items:center;
-  width: 80%;
+  width:$w-80;
   .logo-small {
     width: 60px;
     height: 60px;

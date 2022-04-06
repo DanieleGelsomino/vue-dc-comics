@@ -33,11 +33,16 @@ export default {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: $d-flex;
+  flex-direction: $f-direction-column;
+  justify-content: center;
+  background-color:#000;
+  height: 100vh;
   header {
     background-color: #fff;
     display: $d-flex;
@@ -49,7 +54,9 @@ export default {
     display: $d-flex;
     justify-content: center;
     padding: 30px 0px;
+    // flex-grow: 1;
   }
+
 
 
 

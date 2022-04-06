@@ -30,7 +30,7 @@
     <!-- link con dc logo grande -->
     <div class="main-footer">
       <div class="link-list">
-      <div class="test">
+      <div class="link-image">
         <ul>
         <h3>dc comics</h3>
           <li><a href="#">Characters</a></li>
@@ -71,7 +71,21 @@
       </div> 
     </div>
     <!-- button sign-up e icone social -->
-    <div class="bottom-footer"></div>
+    <div class="bottom-footer">
+      <div class="connect">
+        <button class="btn">Sign-up now</button>
+      
+        <div  class="icons">
+          <h3>Follow us</h3>
+            <img src="../assets/footer-facebook.png" alt="facebook">
+            <img src="../assets/footer-twitter.png" alt="twitter">
+            <img src="../assets/footer-youtube.png" alt="youtube">
+            <img src="../assets/footer-pinterest.png" alt="pinterest">
+            <img src="../assets/footer-periscope.png" alt="periscope">
+        </div>
+
+      </div>
+    </div>
 
   </footer>
 </template>
@@ -95,7 +109,7 @@ name:'FooterComponent'
     justify-content: space-around;
     align-items:center;
     padding: 30px 0px;
-    width: 80%;
+    width: $w-80;
 
     li {
       font-size: $font-size-6;
@@ -123,23 +137,25 @@ name:'FooterComponent'
 }
 
 .main-footer {
-  background-image: url('../assets/dc-logo-bg.png'), url('../assets/footer-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: right;
+  background-image: url('../assets/footer-bg.jpg');
   background-size: 380px, cover;
   display: $d-flex;
   justify-content: center;
   
   .link-list {
+    background-image: url('../assets/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-size: 380px;
+    background-position:right ;
     display: $d-flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: $w-80;
     color:$text-white;
     h3{
       text-transform:$text-uppercase;
       font-size: $font-size-8;
     }
-    .test {
+    .link-image {
       display: $d-flex;
       flex-wrap: wrap;
       padding: 20px 0px;
@@ -162,17 +178,62 @@ name:'FooterComponent'
        text-decoration: $no-decoration;
        font-size: $font-size-6;
        font-weight: $text-bold;
+       &:hover {
+         color:$text-azure;
+         text-decoration:underline;
+       }
      }
     }
-
-
-
   }
 }
 
 .bottom-footer {
   background-color:$bg-darkgray;
-  height: 100px;
+  display:$d-flex;
+  justify-content: center;
+
+  .connect {
+    display: $d-flex;
+    justify-content: space-between;
+    width:$w-80;
+    padding: 30px 0px;
+
+    .btn{
+      background-color:$bg-darkgray;
+      border: 2px solid $azure-bg-color;
+      color: $text-white;
+      text-transform: $text-uppercase;
+      font-weight: $text-bold;
+      font-size: $font-size-6;
+      padding: 8px 10px;
+      &:hover {
+        cursor:pointer;
+      }
+
+
+    }
+
+    .icons {
+      display: $d-flex;
+      align-items: center;
+      padding: 5px;
+       h3 {
+        color: $text-azure;
+        text-transform: $text-uppercase;
+        font-size:$font-size-9;
+        margin-right: 8px;
+    }
+ 
+    img {
+      width: 25px;
+      margin-left:8px;
+      &:hover {
+        cursor:pointer;
+      }
+    }
+
+    }
+  }
 }
 
 </style>
