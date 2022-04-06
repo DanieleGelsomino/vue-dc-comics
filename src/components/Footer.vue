@@ -28,7 +28,48 @@
 
     </div>
     <!-- link con dc logo grande -->
-    <div class="main-footer"></div>
+    <div class="main-footer">
+      <div class="link-list">
+      <div class="test">
+        <ul>
+        <h3>dc comics</h3>
+          <li><a href="#">Characters</a></li>
+          <li><a href="#">Comics</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Tv</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <ul>
+          <h3>dc</h3>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Privacy policy(new)</a></li>
+          <li><a href="#">Ad Choices</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Subsciptions</a></li>
+          <li><a href="#">Talent Workshops</a></li>
+          <li><a href="#">CPSC Certificates</a></li>
+          <li><a href="#">Ratings</a></li>
+          <li><a href="#">shop Help</a></li>
+          <li><a href="#">contact Us</a></li>
+        </ul>
+        <ul>
+          <h3>sites</h3>
+          <li><a href="#">DC</a></li>
+          <li><a href="#">MAD Magazine</a></li>
+          <li><a href="#">DC Kids</a></li>
+          <li><a href="#">DC Universe</a></li>
+          <li><a href="#">DC Power Visa</a></li>
+       </ul>
+       <ul>
+          <h3>shop</h3>
+          <li><a href="#">Shop DC</a></li>
+          <li><a href="#">Shop DC Collectibles</a></li>
+       </ul>
+       </div>
+      </div> 
+    </div>
     <!-- button sign-up e icone social -->
     <div class="bottom-footer"></div>
 
@@ -82,8 +123,51 @@ name:'FooterComponent'
 }
 
 .main-footer {
-  background-image: url('../assets/footer-bg.jpg');
-  height: 350px;
+  background-image: url('../assets/dc-logo-bg.png'), url('../assets/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 380px, cover;
+  display: $d-flex;
+  justify-content: center;
+  
+  .link-list {
+    display: $d-flex;
+    flex-wrap: wrap;
+    width: 80%;
+    color:$text-white;
+    h3{
+      text-transform:$text-uppercase;
+      font-size: $font-size-8;
+    }
+    .test {
+      display: $d-flex;
+      flex-wrap: wrap;
+      padding: 20px 0px;
+      
+    }
+    ul {
+     list-style-type: $list-style;
+     display: $d-flex;
+     flex-direction: $f-direction-column;
+     align-items:start;
+     width: 30%;
+
+     li {
+        line-height: 12px;
+
+     }
+
+     a {
+       color:$text-ligthgray;
+       text-decoration: $no-decoration;
+       font-size: $font-size-6;
+       font-weight: $text-bold;
+     }
+    }
+
+
+
+  }
 }
 
 .bottom-footer {
