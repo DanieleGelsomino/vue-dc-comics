@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-  <img src="../src/assets/dc-logo.png" alt="dc-logo-small">
     <Header/>
     <Main/>
     <Footer/>
@@ -23,12 +22,41 @@ export default {
 </script>
 
 <style lang="scss">
+$bg-c-main: #1c1c1c;
+$text-white: #fff;
+$d-flex:flex;
+$f-direction-column:column;
+
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  display: $d-flex;
+  flex-direction: $f-direction-column;
+  align-items: center;
+  header{
+    width: 80%;
+    padding: 10px 0px;
+  }
+  main {
+    text-align:left;
+    background-color:$bg-c-main;
+    color:$text-white;
+    align-self: start;
+    width: 100%;
+    padding: 20px;
+
+
+
+  }
+
 }
 </style>

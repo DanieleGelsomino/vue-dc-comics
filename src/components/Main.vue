@@ -1,5 +1,9 @@
 <template>
-  <main>MAIN</main>
+  <main>
+    <div class="content-main">
+      <h3>-- Contest goes here --</h3>
+    </div>
+  </main>
 </template>
 
 <script>
@@ -8,6 +12,9 @@ name:'MainComponent'
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+
+
+
 
 </style>
