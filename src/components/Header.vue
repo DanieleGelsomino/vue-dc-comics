@@ -27,53 +27,36 @@ name:'HeaderComponent'
 </script>
 
 <style scope lang="scss">
-$list-style:none;
-$font-size:0.6rem;
-$text-uppercase: uppercase;
-$text-bold:700;
-$logo-small: 60px;
-$text-darkgray: #5b5a5a;
-$d-flex:flex;
-$f-direction-column:column;
-$link-color: #0b7cec; 
-$no-decoration:none;
+@import "../variables";
 
-.dc-navbar{
-  display:$d-flex;
-  align-items: center;
+.dc-navbar {
+  display: $d-flex;
   justify-content: space-between;
-
-  .logo-small{
-    width: $logo-small;
-    height: $logo-small;
+  align-items:center;
+  width: 80%;
+  .logo-small {
+    width: 60px;
+    height: 60px;
   }
-  ul{
-    list-style-type: $list-style;
+  ul {
     display: $d-flex;
-    justify-content: space-around;
-    
-  
+    list-style-type: $list-style;
     li {
-      text-transform: $text-uppercase;
       font-size: $font-size;
       font-weight: $text-bold;
-      color:$text-darkgray;
+      text-transform: $text-uppercase;
       margin: 0 10px;
       a {
-        cursor: pointer;
-        text-decoration: $no-decoration;
-        color: $text-darkgray;
-        &:hover{
-          color:$link-color;
+        text-decoration:$no-decoration;
+        color:$text-darkgray;
+        padding-bottom: 29px;
+        &:hover {
+          color: $azure-color;
+          border-bottom: 4px solid $azure-color;
         }
       }
-   
-      
-}
-
-}
-
-
+    }
+  }
 }
 
 
