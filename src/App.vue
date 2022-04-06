@@ -38,6 +38,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100vh;
   header {
     background-color: #fff;
     display: $d-flex;
@@ -50,6 +51,8 @@ export default {
     justify-content: center;
     padding: 30px 0px;
   }
+
+
 
 }
 </style>

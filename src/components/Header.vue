@@ -1,7 +1,9 @@
 <template>
   <header>
       <div class="dc-navbar">
+        <!-- logo dc piccolo -->
            <img class="logo-small" src="../assets/dc-logo.png" alt="dc-logo-small">
+           <!-- navbar menu -->
            <ul>
                <li><a href="#">characters</a></li>
                <li><a href="#">comics</a></li>
@@ -14,9 +16,7 @@
                <li><a href="#">news</a></li>
                <li><a href="#">shop</a></li>
            </ul>
-
       </div>
-     
   </header>
 </template>
 
@@ -42,7 +42,7 @@ name:'HeaderComponent'
     display: $d-flex;
     list-style-type: $list-style;
     li {
-      font-size: $font-size;
+      font-size: $font-size-6;
       font-weight: $text-bold;
       text-transform: $text-uppercase;
       margin: 0 10px;
@@ -51,8 +51,8 @@ name:'HeaderComponent'
         color:$text-darkgray;
         padding-bottom: 29px;
         &:hover {
-          color: $azure-color;
-          border-bottom: 4px solid $azure-color;
+          color: $text-azure;
+          border-bottom: 4px solid $text-azure;
         }
       }
     }

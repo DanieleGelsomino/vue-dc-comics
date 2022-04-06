@@ -1,8 +1,7 @@
 <template>
   <main>
-    <div class="content-main">
-      <h3>-- Contest goes here --</h3>
-      <div class="banner"></div>
+    <div class="provisional-content">
+      <h3>--&gt; Contest goes here &lt;--</h3>
     </div>
   </main>
 </template>
@@ -16,7 +15,7 @@ name:'MainComponent'
 <style scoped lang="scss">
 @import "../variables";
 
-.content-main {
+.provisional-content {
   display: $d-flex;
   justify-content: space-between;
   align-items:center;
