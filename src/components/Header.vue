@@ -1,29 +1,29 @@
 <template>
   <header>
-      <div class="dc-navbar">
-        <!-- logo dc piccolo -->
-           <img class="logo-small" src="../assets/dc-logo.png" alt="dc-logo-small">
-           <!-- navbar menu -->
-           <ul>
-               <li><a href="#">characters</a></li>
-               <li><a href="#">comics</a></li>
-               <li><a href="#">movies</a></li>
-               <li><a href="#">tv</a></li>
-               <li><a href="#">games</a></li>
-               <li><a href="#">collectibles</a></li>
-               <li><a href="#">videos</a></li>
-               <li><a href="#">fans</a></li>
-               <li><a href="#">news</a></li>
-               <li><a href="#">shop</a></li>
-           </ul>
-      </div>
+    <div class="dc-navbar">
+      <!-- logo dc piccolo -->
+      <img class="logo-small" src="../assets/dc-logo.png" alt="dc-logo-small" />
+      <!-- navbar menu -->
+      <ul>
+        <li><a href="#">characters</a></li>
+        <li><a href="#">comics</a></li>
+        <li><a href="#">movies</a></li>
+        <li><a href="#">tv</a></li>
+        <li><a href="#">games</a></li>
+        <li><a href="#">collectibles</a></li>
+        <li><a href="#">videos</a></li>
+        <li><a href="#">fans</a></li>
+        <li><a href="#">news</a></li>
+        <li><a href="#">shop</a></li>
+      </ul>
+    </div>
   </header>
 </template>
 
 <script>
 export default {
-name:'HeaderComponent'
-}
+  name: "HeaderComponent",
+};
 </script>
 
 <style scope lang="scss">
@@ -32,8 +32,8 @@ name:'HeaderComponent'
 .dc-navbar {
   display: $d-flex;
   justify-content: space-between;
-  align-items:center;
-  width:$w-80;
+  align-items: center;
+  width: $w-80;
   .logo-small {
     width: 60px;
     height: 60px;
@@ -47,8 +47,8 @@ name:'HeaderComponent'
       text-transform: $text-uppercase;
       margin: 0 10px;
       a {
-        text-decoration:$no-decoration;
-        color:$text-darkgray;
+        text-decoration: $no-decoration;
+        color: $text-darkgray;
         padding-bottom: 30px;
         &:hover {
           color: $text-azure;
@@ -58,9 +58,4 @@ name:'HeaderComponent'
     }
   }
 }
-
-
-  
- 
-
 </style>
