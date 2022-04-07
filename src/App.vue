@@ -58,8 +58,9 @@ export default {
   main {
     background-color: $bg-c-main;
     display: $d-flex;
+    flex-direction: $f-direction-column;
     justify-content: center;
-    padding: 30px 0px;
+    align-items: center;
     flex-grow: 1;
   }
 }

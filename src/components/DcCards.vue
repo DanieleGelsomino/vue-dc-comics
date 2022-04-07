@@ -1,6 +1,8 @@
 <template>
   <div class="card">
-    <img :src="urlImg" />
+    <div class="img-box">
+      <img :src="urlImg" />
+    </div>
     <h3>{{ titleSeries }}</h3>
   </div>
 </template>
@@ -18,21 +20,27 @@ export default {
 <style scoped lang="scss">
 @import "@/variables";
 .card {
-  display: $d-flex;
-  width: calc(100% / 6);
-  flex-direction: column;
-  flex-wrap: wrap;
+  width: (100% / 6);
 
-  img {
-    width: 100px;
-    height: 100px;
+  .img-box {
+    height: 120px;
+    width: 130px;
+    overflow: hidden;
+    margin: 10px 0px;
+    padding: 10px;
+    img {
+      width: 100%;
+    }
   }
 
   h3 {
     color: $text-white;
     font-size: $font-size-6;
-    text-align: left;
+    text-transform: $text-uppercase;
     line-height: 10px;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
   }
 }
 </style>
