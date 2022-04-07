@@ -1,0 +1,62 @@
+[
+    {
+      "name": "characters",
+      "active": false,
+      "url": "#",
+      "id": 1
+    },
+    {
+      "name": "comics",
+      "active": false,
+      "url": "#",
+      "id": 2
+    },
+    {
+      "name": "movies",
+      "active": false,
+      "url": "#",
+      "id": 3
+    },
+    {
+      "name": "tv",
+      "active": false,
+      "url": "#",
+      "id": 4
+    },
+    {
+      "name": "games",
+      "active": false,
+      "url": "#",
+      "id": 5
+    },
+    {
+      "name": "collectibles",
+      "active": false,
+      "url": "#",
+      "id": 6
+    },
+    {
+      "name": "videos",
+      "active": false,
+      "url": "#",
+      "id": 7
+    },
+    {
+      "name": "fans",
+      "active": false,
+      "url": "#",
+      "id": 8
+    },
+    {
+      "name": "news",
+      "active": false,
+      "url": "#",
+      "id": 9
+    },
+    {
+      "name": "shop",
+      "active": false,
+      "url": "#",
+      "id": 10
+    }
+  ]

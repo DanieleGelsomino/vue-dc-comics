@@ -5,8 +5,12 @@
       <img class="logo-small" src="../assets/dc-logo.png" alt="dc-logo-small" />
       <!-- navbar menu -->
       <ul>
-        <li v-for="item in menu" :key="item.name">
-          <a href="#"></a>{{ item.name }}
+        <li
+          v-for="(item, index) in links"
+          :key="index"
+          :class="{ active: item.active }"
+        >
+          <a href="#">{{ item.name }}</a>
         </li>
       </ul>
     </div>
@@ -16,57 +20,14 @@
 <script>
 export default {
   name: "HeaderComponent",
-  data() {
-    return {
-      menu: [
-        {
-          name: "characters",
-          active: false,
-        },
-        {
-          name: "comics",
-          active: false,
-        },
-        {
-          name: "movies",
-          active: false,
-        },
-        {
-          name: "tv",
-          active: false,
-        },
-        {
-          name: "games",
-          active: false,
-        },
-        {
-          name: "collectibles",
-          active: false,
-        },
-        {
-          name: "videos",
-          active: false,
-        },
-        {
-          name: "fans",
-          active: false,
-        },
-        {
-          name: "news",
-          active: false,
-        },
-        {
-          name: "shop",
-          active: false,
-        },
-      ],
-    };
+  props: {
+    links: Array,
   },
 };
 </script>
 
 <style scope lang="scss">
-@import "../variables";
+@import "@/variables";
 
 .dc-navbar {
   display: $d-flex;
@@ -86,14 +47,14 @@ export default {
       font-weight: $text-bold;
       text-transform: $text-uppercase;
       margin: 0 10px;
+      &.active {
+        color: $text-azure;
+        border-bottom: 5px solid $text-azure;
+      }
       a {
         text-decoration: $no-decoration;
         color: $text-darkgray;
         padding-bottom: 30px;
-        &:hover {
-          color: $text-azure;
-          border-bottom: 5px solid $text-azure;
-        }
       }
     }
   }

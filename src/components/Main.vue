@@ -1,19 +1,27 @@
 <template>
   <main>
     <div class="provisional-content">
-      <h3>--&gt; Contest goes here &lt;--</h3>
+      <DcCards v-for="(item, index) in comics" :key="index" :comics="item" />
     </div>
   </main>
 </template>
 
 <script>
+import DcCards from "@/data/dc-comics";
+
 export default {
   name: "MainComponent",
+  props: {
+    comics: Array,
+  },
+  components: {
+    DcCards,
+  },
 };
 </script>
 
 <style scoped lang="scss">
-@import "../variables";
+@import "@/variables";
 
 .provisional-content {
   display: $d-flex;

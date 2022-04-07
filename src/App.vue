@@ -1,39 +1,43 @@
 <template>
   <div id="app">
-    <Header/>
-    <Main/>
-    <Footer/>
+    <Header :links="menu" />
+    <Main :comicsSeries="comics" />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
-
+import Header from "./components/Header.vue";
+import Main from "./components/Main.vue";
+import Footer from "./components/Footer.vue";
+import headerMenu from "@/data/menu";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Main,
-    Footer
-  }
-}
+    Footer,
+  },
+  data() {
+    return {
+      menu: headerMenu,
+    };
+  },
+};
 </script>
 
 <style lang="scss">
 @import "variables";
 
-
-*{
-  padding:0px;
-  margin:0px;
-  box-sizing:border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 #app {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -41,7 +45,7 @@ export default {
   display: $d-flex;
   flex-direction: $f-direction-column;
   justify-content: center;
-  background-color:#000;
+  background-color: #000;
   height: 100vh;
   header {
     background-color: #fff;
@@ -54,11 +58,7 @@ export default {
     display: $d-flex;
     justify-content: center;
     padding: 30px 0px;
-    // flex-grow: 1;
+    flex-grow: 1;
   }
-
-
-
-
 }
 </style>

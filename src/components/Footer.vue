@@ -109,7 +109,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../variables";
+@import "@/variables";
 
 .top-footer {
   background-color: $azure-bg-color;
