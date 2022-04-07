@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header :links="menu" />
-    <Main :comicsSeries="comics" />
+    <Main :comics="comics" />
     <Footer />
   </div>
 </template>
@@ -11,6 +11,7 @@ import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 import headerMenu from "@/data/menu";
+import comics from "@/data/dc-comics";
 
 export default {
   name: "App",
@@ -22,6 +23,7 @@ export default {
   data() {
     return {
       menu: headerMenu,
+      comics,
     };
   },
 };
@@ -46,7 +48,7 @@ export default {
   flex-direction: $f-direction-column;
   justify-content: center;
   background-color: #000;
-  height: 100vh;
+
   header {
     background-color: #fff;
     display: $d-flex;

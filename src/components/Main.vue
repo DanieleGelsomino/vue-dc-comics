@@ -1,21 +1,25 @@
 <template>
   <main>
-    <div class="provisional-content">
-      <DcCards v-for="(item, index) in comics" :key="index" :comics="item" />
+    <div class="container-cards">
+      <Cards
+        v-for="(item, index) in comics"
+        :key="'comic-' + index"
+        :titleSeries="item.series"
+        :urlImg="item.thumb"
+      />
     </div>
   </main>
 </template>
 
 <script>
-import DcCards from "@/data/dc-comics";
-
+import Cards from "@/components/DcCards.vue";
 export default {
   name: "MainComponent",
   props: {
     comics: Array,
   },
   components: {
-    DcCards,
+    Cards,
   },
 };
 </script>
@@ -23,13 +27,11 @@ export default {
 <style scoped lang="scss">
 @import "@/variables";
 
-.provisional-content {
-  display: $d-flex;
-  justify-content: space-between;
-  align-items: center;
-  width: $w-80;
-  h3 {
-    color: $text-white;
+main {
+  .container-cards {
+    display: $d-flex;
+    flex-wrap: wrap;
+    width: $w-80;
   }
 }
 </style>
