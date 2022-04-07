@@ -118,6 +118,7 @@ export default {
   ul {
     list-style-type: $list-style;
     display: $d-flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 30px 0px;

@@ -5,16 +5,9 @@
       <img class="logo-small" src="../assets/dc-logo.png" alt="dc-logo-small" />
       <!-- navbar menu -->
       <ul>
-        <li><a href="#">characters</a></li>
-        <li><a href="#">comics</a></li>
-        <li><a href="#">movies</a></li>
-        <li><a href="#">tv</a></li>
-        <li><a href="#">games</a></li>
-        <li><a href="#">collectibles</a></li>
-        <li><a href="#">videos</a></li>
-        <li><a href="#">fans</a></li>
-        <li><a href="#">news</a></li>
-        <li><a href="#">shop</a></li>
+        <li v-for="item in menu" :key="item.name">
+          <a href="#"></a>{{ item.name }}
+        </li>
       </ul>
     </div>
   </header>
@@ -23,6 +16,52 @@
 <script>
 export default {
   name: "HeaderComponent",
+  data() {
+    return {
+      menu: [
+        {
+          name: "characters",
+          active: false,
+        },
+        {
+          name: "comics",
+          active: false,
+        },
+        {
+          name: "movies",
+          active: false,
+        },
+        {
+          name: "tv",
+          active: false,
+        },
+        {
+          name: "games",
+          active: false,
+        },
+        {
+          name: "collectibles",
+          active: false,
+        },
+        {
+          name: "videos",
+          active: false,
+        },
+        {
+          name: "fans",
+          active: false,
+        },
+        {
+          name: "news",
+          active: false,
+        },
+        {
+          name: "shop",
+          active: false,
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -41,6 +80,7 @@ export default {
   ul {
     display: $d-flex;
     list-style-type: $list-style;
+    flex-wrap: wrap;
     li {
       font-size: $font-size-6;
       font-weight: $text-bold;
