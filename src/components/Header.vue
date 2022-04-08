@@ -47,14 +47,15 @@ export default {
       font-weight: $text-bold;
       text-transform: $text-uppercase;
       margin: 0 10px;
-      &.active {
-        color: $text-azure;
-        border-bottom: 5px solid $text-azure;
-      }
+
       a {
         text-decoration: $no-decoration;
         color: $text-darkgray;
         padding-bottom: 30px;
+        &:hover {
+          color: $text-azure;
+          border-bottom: 5px solid $text-azure;
+        }
       }
     }
   }

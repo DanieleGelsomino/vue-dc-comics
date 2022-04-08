@@ -35,12 +35,13 @@ export default {
 
   h3 {
     color: $text-white;
-    font-size: $font-size-6;
+    font-size: $font-size-5;
     text-transform: $text-uppercase;
     line-height: 10px;
     text-align: left;
     margin-top: 5px;
     margin-left: 10px;
+    width: 65%;
   }
 }
 </style>

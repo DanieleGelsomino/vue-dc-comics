@@ -41,7 +41,7 @@ export default {
   width: 100%;
 }
 .jumbo-area {
-  height: 200px;
+  height: 300px;
   position: relative;
 
   .badge-series {
@@ -53,7 +53,7 @@ export default {
     padding: 8px 16px;
     position: absolute;
     bottom: -15px;
-    left: 100px;
+    left: 125px;
     display: inline-block;
     &:hover {
       cursor: pointer;
